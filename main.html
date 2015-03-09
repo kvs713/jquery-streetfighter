@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+	#shadow-root
+		<shadow></shadow>
+	<script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -8,6 +11,33 @@
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
-<body>
+<body data-feedly-mini="yes">
+	<div class="main">
+		<div class="ryu-container">
+			<div class="ryu">
+			<div class="ryu-still ryu-action" style="display: block;"></div>
+			<div class="ryu-ready ryu-action" style="display: none;"></div>
+			<div class="ryu-throwing ryu-action" style="display: none;"></div>
+			<div class="ryu-cool ryu-action" style="display: none;"></div>
+			</div>
+		</div>
+		<div class="hadouken" style-"display: none; left: -212px"></div>
+		</div>
+		<div class="text-content">
+			<div class="sf-logo" style="display: none;"></div>
+			<div class="jquery-logo" style="display: none;"></div>
+			<div class="brought-by" style="display: none;">
+							brought to you by...
+						</div>
+			<div class="how-to" style="display: block;">
+				<p>Click on Ryu to make him throw a Hadouken.</p>
+				<p>Press and hold down the "x" key to make him strike his cool pose!</p>
+			</div>
+		</div>
+	</div>
+	<audio id="theme-song" src="sound/street-fighter-theme.mp3">
+		<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
+	</audio>
+	<div id="feedly-mini" title="feedly Mini toolkit"></div>
 </body>
 </html>
