@@ -46,8 +46,8 @@ body {
   display: none;
   position: absolute;
   z-index: 10;
-  top: 8em;
-  left: 35em;
+  top: 10.5em;
+  left: 40em;
   float: left;
 }
 * {
