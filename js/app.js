@@ -1,7 +1,7 @@
 $(document).ready(function() {
+  playTheme();  
   playGame();
 
-  playTheme();
 });
 
 function playGame() {
@@ -54,11 +54,6 @@ function playGame() {
   });
 }
 
-function playTheme () {
-  $('#theme-song')[0].volume = 0.5;
-  // $('#theme-song')[0].load();
-  $('#theme-song')[0].play();
-}
 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
@@ -70,4 +65,22 @@ function playCool () {
   $('#cool')[0].volume = 0.5;
   //$('#cool')[0].load();
   $('#cool')[0].play();
+}
+
+function playTheme() {
+  $('#theme-song')[0].volume = 0.3;
+  $('#theme-song')[0].play();
+  $('.sf-logo').fadeIn(3500, function() {
+    $(this).fadeOut(1000, function() {
+      $('.brought-by').fadeIn(1500, function() {
+        $(this).fadeOut(1000, function() {
+          $('.jquery-logo').fadeIn(1500, function() {
+            $(this).fadeOut(1500, function() {
+              $('.how-to').fadeIn(1000);
+            });
+          })
+        })
+      })
+    })
+  })
 }
